@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header class="head">
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town</p>
+    </header>
+    <section class="menu">
+    </section>
+    <section id="modal">
+      <div class="window">
+        <div id="total-bill"></div>
+        <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <form action="" id="payment-modal" method="post">
+            <p>Enter Card Details</p>
+                <input type="text" id="name" placeholder="Enter your name" required/>
+                <input type="number" id="card" placeholder="Enter card number" required/>
+                <input type="number" id="card" placeholder="Enter CVV" required/>
+                <button type="button" id="form">Pay</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+        <div class="total">
+        <p>Your order</p>
+        <div class="orders">
+        </div>
+        <button id ="buy" type="button">Complete order</button>
+        </div>
+    </footer>
+</div>
+<script src="script.js" type="module"></script>
+</body>
+</html>

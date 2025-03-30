@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Smythe", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+background-color: bisque;
+}
+
+.container{
+    width:600px;
+    background-color: #FFFFFF;
+    margin:5px auto 67px;
+    height: auto;
+}
+
+.head{
+    width: 100%;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;  
+    background: url("images/bg.png") center center/cover;
+    color: #FFFFFF;
+    margin-bottom: 67px;
+}
+
+h1 {
+    margin-left: 46px;
+}
+
+h1 + p{
+    margin-left: 46px;
+}
+/* experiment */
+/* .menu{
+    overflow-y:scroll;
+    height: 400px;
+} */
+
+
+.items{
+    display: flex;
+    /* align-items: center; */
+    width: 508px;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.items:not(:last-child)
+{
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.items img{
+    width: 70px;
+    height: 89px;
+}
+
+.item-data{
+    margin-left: 31px;
+}
+
+.name{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.description{
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.circle{
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+    background: url("Images/circle.png") center center;
+    display: flex;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.circle:hover{
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.circle i{
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    display: none; 
+}
+
+footer .total{
+    height: 319px;
+    width: 508px;
+    margin: auto;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .total  p{
+    margin:0 auto;
+}
+
+.orders{
+ width: 100%;
+ height: 319px;
+}
+
+#buy{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: auto;
+    width: 505px;
+    height: 60px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #16DB99;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#buy:hover{
+    background-color: darkgreen;
+    color: white;
+    transition: background-color 1s ease;
+}
+
+/* order */
+.order{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.dec-qauntity{
+    height: 30px;
+    width: 30px;
+    background: url("Images/circle.png") center center;
+    display: flex;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.dec-qauntity:hover{
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.dec-qauntity i{
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderName{
+    margin-right:auto;
+    margin-left: 30px;
+}
+
+.orderQuantity{
+    margin-right: 25px;
+}
+
+/* modal-window */
+.window{
+    text-align: center;
+    width:fit-content;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+    background-color: #FFFFFF;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 20px 30px darkgray;
+}
+
+
+#payment-modal{
+    padding: 20px ;
+    width:524px;
+}
+
+form p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+form input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 475px;
+    height: 71px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#form{
+    width:93%;
+    margin: 20px auto;
+    height: 60px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #16DB99;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.close-btn{
+   align-self:flex-end;
+    padding: 10px;
+    background-image: url('Images/circle.png') center center/cover;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.close-btn:hover{
+    background-color: chocolate;
+    transition: 0.3s ease-in;
+}
+
+
+
+
+
+
+
+
+
